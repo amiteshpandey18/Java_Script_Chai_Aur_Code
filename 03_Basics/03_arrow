@@ -1,0 +1,56 @@
+const user = {
+    username: "hitesh",
+    price: 999,
+
+    welcomeMessage: function() {
+        console.log(`${this.username} , welcome to website`); 
+        console.log(this); // give current object
+    }
+
+}
+
+// user.welcomeMessage()
+// user.username = "sam"
+// user.welcomeMessage()
+
+// console.log(this);  // In browser this refers the window objects and in Node {}
+
+// function chai(){
+//     let username = "Amitesh"
+//     console.log(this.username);  // output - (undefine) "Amitesh" is not object level it is local variable
+// }
+
+// chai()
+
+// const chai = function () {
+//     let username = "hitesh"
+//     console.log(this.username);
+// }
+
+// ---------------- Arrow Function ---------------
+
+const chai =  () => {
+    let username = "hitesh"
+    console.log(this);
+}
+
+
+// chai()
+
+// const addTwo = (num1, num2) => {
+//     return num1 + num2
+// }
+
+// const addTwo = (num1, num2) =>  num1 + num2  // We return in one line then no need to write return keyword 
+
+// const addTwo = (num1, num2) => ( num1 + num2 ) // use () to return in one line 
+
+const addTwo = (num1, num2) => ({username: "hitesh"})  // this is for object return 
+
+
+console.log(addTwo(3, 4))
+
+
+// const myArray = [2, 5, 3, 7, 8]
+
+// myArray.forEach()
