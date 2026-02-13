@@ -53,7 +53,7 @@ users[1].email
 // console.log(Object.values(tinderUser));
 // console.log(Object.entries(tinderUser));   // It converts an object into an array of key-value pairs.
 
-// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+console.log(tinderUser.hasOwnProperty('isLoggedIn')); 
 
 
 const course = {
@@ -64,13 +64,14 @@ const course = {
 
 // course.courseInstructor
 
-const { courseInstructor: instructor } = course  // Object destructor
+const { courseInstructor: instructor } = course  // Object destructuring
 
 // console.log(courseInstructor);
 console.log(instructor);
 
 
 // --------------- JSON ------------------------//
+
 // {
 //     "name": "hitesh",
 //     "coursename": "js in hindi",
