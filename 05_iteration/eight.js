@@ -5,7 +5,7 @@ const myNums = [1, 2, 3]
 //     return acc + currval
 // }, 0)
  
-const myTotal = myNums.reduce( (acc, curr) => acc+curr, 0)    //  used to reduce an array into a single value.
+const myTotal = myNums.reduce( (acc, curr) => acc+curr, 0)    // used to reduce an array into a single value.
 
 console.log(myTotal);
 
