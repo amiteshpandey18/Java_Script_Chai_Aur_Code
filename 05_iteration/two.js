@@ -8,14 +8,14 @@ let index = 0
 let myArray = ['flash', "batman", "superman"]
 
 let arr = 0
-while (arr < myArray.length) {
-    //console.log(`Value is ${myArray[arr]}`);
+while (arr < myArray.length) {                  // When we don't know how much iterations
+    //console.log(`Value is ${myArray[arr]}`);        
     arr = arr + 1
 }
 
 let score = 11
 
-do {
-    console.log(`Score is ${score}`);
+do {                                     // Atlest perform one task
+    console.log(`Score is ${score}`);     
     score++
 } while (score <= 10);

@@ -6,11 +6,12 @@ if (userEmail) {
     console.log("Don't have user email");
 }
 
-// falsy values
+// falsy values  --> In JavaScript, every value is either truthy or 
+//                   falsy when used in a Boolean context (like inside if, while, &&, ||).
 
 // false, 0, -0, BigInt 0n, "", null, undefined, NaN
 
-// Rest all Truthy values jus like eg:--
+// Rest all Truthy values just like eg:--
 
 //truthy values
 // "0", 'false', " ", [], {}, function(){} and more.......
@@ -29,7 +30,7 @@ if (Object.keys(emptyObj).length === 0) {  // keys() find object keys it will gi
 
 let val1;
 // val1 = 5 ?? 10
-// val1 = null ?? 10
+// val1 = null ?? 10            // Gives number, it will only for null and undefined
 // val1 = undefined ?? 15
 val1 = null ?? 10 ?? 20
 

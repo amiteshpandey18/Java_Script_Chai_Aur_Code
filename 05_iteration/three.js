@@ -1,7 +1,7 @@
 // for of
 
 // ["", "", ""]
-// [{}, {}, {}]
+// [{}, {}, {}] // objects inside array
 
 const arr = [1, 2, 3, 4, 5]
 
@@ -25,7 +25,7 @@ map.set('IN', "India")
 
 // console.log(map);
 
-for (const [key, value] of map) {
+for (const [key, value] of map) {  // Destructure in key and value
     // console.log(key, ':-', value);
 }
 
@@ -34,7 +34,7 @@ const myObject = {
     game2: 'Spiderman'
 }
 
-// for (const [key, value] of myObject) {
+// for (const [key, value] of myObject) {   // Objects is not iterable using for of
 //     console.log(key, ':-', value);
     
 // }
