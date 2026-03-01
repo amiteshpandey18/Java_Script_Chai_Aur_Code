@@ -1,5 +1,5 @@
 const button = document.querySelectorAll('.button');
-const b = document.querySelector('body');
+const body = document.querySelector('body');
 button.forEach(function (button) {
     console.log(button);
     addEventListener('click', function (e) {
@@ -31,17 +31,17 @@ button.forEach(function (button) {
                    // Using if 
 
         if (e.target.id === 'grey') {
-            b.style.backgroundColor = e.target.id;
+            body.style.backgroundColor = e.target.id;
         }
 
         if (e.target.id === 'yellow') {
-            b.style.backgroundColor = e.target.id;
+            body.style.backgroundColor = e.target.id;
         }
         if (e.target.id === 'blue') {
-            b.style.backgroundColor = e.target.id;
+            body.style.backgroundColor = e.target.id;
         }
         if (e.target.id === 'white') {
-            b.style.backgroundColor = e.target.id;
+            body.style.backgroundColor = e.target.id;
         }
 
     })
