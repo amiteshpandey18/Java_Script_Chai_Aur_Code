@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and Remove Element</title>
+</head>
+
+<body>
+    <ul class="language">
+        <li>Java Script</li>
+    </ul>
+</body>
+
+<script>
+
+    // Add element
+
+    function addLanguage(langName) {
+        const li = document.createElement('li');     // This approch is not good
+        li.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(li);
+    }
+    addLanguage('C');
+
+    function addOptLanguage(langName) {
+        const li = document.createElement('li');        // This is better approch , and efficient way
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
+    }
+
+    addOptLanguage('Python');
+    addOptLanguage('goLang');
+
+    // Edit 
+
+    const secondLang = document.querySelector('li:nth-child(2)');
+    console.log(secondLang);
+    const newLi = document.createElement('li');        // Edit through this or 
+    newLi.textContent = "MOJO";
+    secondLang.replaceWith(newLi);
+
+    // edit 
+
+    const firstLang = document.querySelector('li:first-child');
+    firstLang.outerHTML = "<li>TypeScript</li>"                  // or using this  ^
+
+    // remove 
+
+    const lastLang = document.querySelector('li:last-child');
+    lastLang.remove();                                           // remove the element
+
+</script>
+</html>
